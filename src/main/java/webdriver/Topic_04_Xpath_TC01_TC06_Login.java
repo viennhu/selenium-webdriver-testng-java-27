@@ -108,6 +108,14 @@ public class Topic_04_Xpath_TC01_TC06_Login {
         String contactInfo = driver.findElement(By.xpath("//h2[text()='Account Information']/parent::div//following-sibling::div//p")).getText();
         Assert.assertTrue(contactInfo.contains(fullName));
         Assert.assertTrue(contactInfo.contains(emailAddress));
+
+    }
+    @Test
+    public void TC_01_UPPERCASE () {
+        driver.get("http://live.techpanda.org");
+        driver.findElement(By.cssSelector(".footer a[title='My Account']")).click();
+        String actualResult = driver.findElement(By.xpath("//h2[text()='Already registered?']")).getText();
+        Assert.assertEquals(actualResult,"ALREADY REGISTERED?");
     }
 
     @AfterClass
