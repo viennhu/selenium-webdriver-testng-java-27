@@ -43,12 +43,18 @@ public class Topic_08_Dropdown_Practice_01 {
         driver.findElement(By.id("FirstName")).sendKeys(firstName);
         driver.findElement(By.id("LastName")).sendKeys(lastName);
         select = new Select(driver.findElement(By.name("DateOfBirthDay")));
+        Assert.assertFalse(select.isMultiple());
+        Assert.assertEquals(32,select.getOptions().size());
         select.selectByVisibleText(day);
         Assert.assertEquals(select.getFirstSelectedOption().getText(),day);
         select = new Select(driver.findElement(By.name("DateOfBirthMonth")));
+        Assert.assertFalse(select.isMultiple());
+        Assert.assertEquals(13,select.getOptions().size());
         select.selectByVisibleText(month);
         Assert.assertEquals(select.getFirstSelectedOption().getText(),month);
         select = new Select(driver.findElement(By.name("DateOfBirthYear")));
+        Assert.assertFalse(select.isMultiple());
+        Assert.assertEquals(112,select.getOptions().size());
         select.selectByVisibleText(year);
         Assert.assertEquals(select.getFirstSelectedOption().getText(),year);
         driver.findElement(By.id("Email")).sendKeys(email);
