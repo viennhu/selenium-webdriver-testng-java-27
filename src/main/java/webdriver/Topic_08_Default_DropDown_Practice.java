@@ -40,7 +40,7 @@ public class Topic_08_Default_DropDown_Practice {
         //Action
         driver.findElement(By.id("gender-male")).click();
         driver.findElement(By.id("FirstName")).sendKeys(firstName);
-        driver.findElement(By.id("LastName")).sendKeys(lastName);
+        driver.findElement(By.id("LastName")).sendKeys(lastName);   
         select = new Select(driver.findElement(By.name("DateOfBirthDay")));
         Assert.assertFalse(select.isMultiple());
         Assert.assertEquals(32,select.getOptions().size());
