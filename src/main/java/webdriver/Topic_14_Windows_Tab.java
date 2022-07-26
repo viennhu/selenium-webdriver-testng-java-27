@@ -89,7 +89,6 @@ public class Topic_14_Windows_Tab {
         Set<String> allIDs = driver.getWindowHandles();
         for (String id : allIDs) {
             driver.switchTo().window(id);
-            System.out.println("======================");
             System.out.println(driver.getTitle());
             if (driver.getTitle().contains(expectedTitle)) {
                 break;
