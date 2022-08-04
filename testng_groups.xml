@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test name="Run on Firefox">
-        <groups>
-            <run>
+    <groups>
+        <run>
             <include name="admin" />
-            </run>
-        </groups>
-        <classes>
+        </run>
+    </groups>
+    <test name="Run on Firefox">
+        <!--<classes>
             <class name="tech.Topic_05_Parameter">
             </class>
-        </classes>
+        </classes>-->
+        <packages>
+            <package name="Admin"></package>
+        </packages>
     </test>
 </suite>
