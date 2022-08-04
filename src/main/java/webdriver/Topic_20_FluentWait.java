@@ -62,7 +62,7 @@ public class Topic_20_FluentWait {
                 .pollingEvery(Duration.ofMillis(100))
                 .ignoring(NoSuchElementException.class)
                 .until(new Function<WebElement, Boolean>() {
-                    @Override
+                    @Override 
                     public Boolean apply(WebElement text) {
                         boolean textIsDisplayed = text.isDisplayed();
                         return textIsDisplayed;
