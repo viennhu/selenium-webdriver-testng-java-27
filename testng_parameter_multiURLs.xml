@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="Run on different envs">
+        <parameter name="serverName" value="DEV" />
+        <classes>
+            <class name="tech.Topic_05_Parameter_MultipleURLs">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Run on Chrome">
+        <parameter name="serverName" value="QA" />
+        <classes>
+            <class name="tech.Topic_05_Parameter_MultipleURLs">
+            </class>
+        </classes>
+    </test>
+
+
+</suite>

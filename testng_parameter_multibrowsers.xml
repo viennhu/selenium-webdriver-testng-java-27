@@ -4,7 +4,7 @@
     <test name="Run on Firefox">
         <parameter name="browser" value="firefox" />
         <classes>
-            <class name="tech.Topic_05_Parameter">
+            <class name="tech.Topic_05_Parameter_MultipleBrowsers">
             </class>
         </classes>
     </test>
@@ -12,7 +12,7 @@
     <test name="Run on Chrome">
         <parameter name="browser" value="chrome" />
         <classes>
-            <class name="tech.Topic_05_Parameter">
+            <class name="tech.Topic_05_Parameter_MultipleBrowsers">
             </class>
         </classes>
     </test>

@@ -12,7 +12,7 @@ import org.testng.annotations.*;
 import java.io.File;
 import java.util.concurrent.TimeUnit;
 
-public class Topic_05_Parameter {
+public class Topic_05_Parameter_MultipleBrowsers {
     WebDriver driver;
     String projectPath = System.getProperty("user.dir");
     String osName = System.getProperty("os.name");
